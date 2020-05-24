@@ -14,7 +14,7 @@ const ball = {
     x: canvas.width / 2,
     y: canvas.height / 2,
     size: 10,
-    speed: 4,
+    speed: 2,
     dx: 4,
     dy: -4
 };
@@ -159,7 +159,7 @@ function moveBall() {
 function increaseScore() {
     score++;
 
-    if (score % (brickRowCount * brickRowCount) === 0) {
+    if (score % (brickRowCount * brickColumnCount) === 0) {
         showAllBricks();
     }
 }
